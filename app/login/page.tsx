@@ -47,17 +47,17 @@ export default function PageLogin() {
                 <h1 className="text-3xl font-bold text-gray-900 mb-4">Аутентификация</h1>
                 <div className="space-y-4">
                     <div>
-                        <label htmlFor="email" className="sr-only">Email</label>
+                        <label htmlFor="email" className="text-sm font-medium text-gray-700">Почта</label>
                         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" required className="appearance-none w-full outline-none border border-gray-400 bg-white text-gray-600 rounded-md px-3 py-2 focus:border-orange-300"/>
                     </div>
                     <div>
-                        <label htmlFor="password" className="sr-only">Email</label>
+                        <label htmlFor="password" className="text-sm font-medium text-gray-700">Пароль</label>
                         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" name="password" id="password" required className="appearance-none w-full outline-none border border-gray-400 bg-white text-gray-600 rounded-md px-3 py-2 focus:border-orange-300"/>
                     </div>
-            <button type="submit" className="w-full py-2 flex justify-center bg-amber-100 text-amber-700 border border-amber-400 active:bg-amber-400">Войти</button>
-            <div className="flex">
+            <button type="submit" className="bg-blue-700 rounded-md py-2 px-5 text-lg mt-5 shadow-2xl shadow-blue-200 hover:shadow-2xl hover:bg-indigo-800 hover:shadow-indigo-500 w-full">Войти</button>
+            <div className="flex space-x-1 justify-center">
                 <p className="text-gray-600">Нет аккаунта?</p>
-                <Link href="/register" className="text-gray-800">Регистрация</Link>
+                <Link href="/register" className="text-blue-800">Регистрация</Link>
             </div>
                 </div>
             </div>
